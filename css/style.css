@@ -1,0 +1,333 @@
+html{font-family: Tahoma,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.my-logo{position:fixed;bottom:0;left:0;margin:0;padding:0}.my-logo__pic{border:0;vertical-align:middle;width:50px;height:50px}body{margin:0;padding:0;font:1em/1.4em sans-serif;color:#353535}
+body{
+    background: #fff;
+    width: 100%;
+    font-size: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    line-height: 1.3;
+}
+
+#top{
+    background-image: url(../images/top.png);
+    background-size: contain;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0 auto;
+    background-color: #000035;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.header, .footer{
+    margin-top: 1.5vw;
+    font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12pt;
+    color: rgba(172, 225, 255, 255);
+    
+}
+.header a:hover, .header a:active, .footer a:hover, .footer a:active{
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.header img, .footer img{
+    width: 16vw;
+}
+.header div, .footer .nav div{
+    display: inline-block;
+    margin-top: 2px;
+    padding: 3px;
+}
+
+#top h1{
+    margin-top: 7vw;
+    padding: 5px;
+    font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 20pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: left;
+}
+#top p{
+    font-family: MuseoCyrl-900, MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 13pt;
+    color: rgba(172, 225, 255, 255);
+    text-align: left;
+    line-height: 1.3;
+}
+#tel{
+    font-size: 20pt;
+    margin: 5px;
+}
+#headsend p{
+    color: rgba(255, 255, 255, 255);
+}
+.headinp{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.row h2{
+    font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30pt;
+    color: rgba(0, 0, 56, 255);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.sect2 p{
+    font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 15pt;
+    color: rgba(1, 86, 135, 255);
+    text-align: justify;
+    padding: 2px;
+}
+
+.row hr{
+     -webkit-box-shadow:0 2px 12px rgba(0, 0, 0, 0.7);
+       -moz-box-shadow:0 2px 12px rgba(0, 0, 0, 0.7);
+            box-shadow:0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.cont2 h3{
+    font-family: MuseoCyrl-700, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 28pt;
+    color: rgba(0, 0, 40, 255);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5vw;
+}
+#tabs.nav-tabs li{
+    font-size: 1vw;
+}
+#tabs.nav-tabs > li.active > a {
+    background-color: #000038;
+    color: white;
+}
+#tabs.nav-tabs > li > a{
+    background-color: #b0dffe;
+    color: black;
+}
+#tabs.nav-tabs > li > a:hover{
+    background-color: #000038;
+    color: white;
+    border-bottom: 1px solid #000035;
+}
+.tabcont {
+    background-color: #000035;
+}
+
+.imgbox img{
+    display: inline-block;
+    padding: 1.3vw;
+    padding-top: 5.5vw;
+}
+
+.imgbox p{
+    font-family: MuseoSansCyrl-700, MuseoSansCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 2vw;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.imgbox p.sm{
+    font-size: 1.2vw;
+    margin-bottom: 2.5vw;
+}
+
+.downcat {
+    margin: 10px;
+   font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12pt;
+    color: rgba(172, 225, 255, 255);
+    text-align: center;
+}
+
+.features {
+    background-image: url(../images/sect2.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.sect2_bl{
+    background-color: #000035;
+    font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 1.4vw;
+    color: rgba(255, 255, 255, 255);
+    text-align: left;
+    padding: 3vw 3vw 1vw;
+    margin-bottom: 1vw;
+}
+.sect2_bl li{
+    padding: 0.4vw;
+}
+.cont2 h4{
+   font-family: MuseoCyrl-700, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 2vw;
+    color: rgba(0, 0, 56, 255);
+    text-align: center;
+    font-weight: bold;
+    margin: 1vw;
+    margin-top: 2vw;
+}
+
+.sect3{
+     background-image: url(../images/sect3.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 10vw;
+}
+
+.black{
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: MuseoCyrl-300, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 1.1vw;
+    color: rgba(0, 0, 0, 255);
+    text-align: justify;
+    top: 10vw;
+    line-height: 1.4vw;
+    margin-left: 3vw;
+    padding: 2vw;
+    margin-bottom: 1vw;
+}
+
+.white{
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: MuseoCyrl-100, MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 255);
+    text-align: justify;
+    line-height: 1.4vw;
+    top: 10vw;
+    padding: 2vw;
+    margin-left: -1vw;
+    margin-bottom: 1vw; 
+}
+.slider{
+    text-align: center;
+}
+
+.cont2 h5{
+	font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 1.5vw;
+	text-align: center;
+	
+}
+.sect4 >*{
+	padding: 10px;
+	color: rgba(255, 255, 255, 255);
+}
+
+.sect5{
+     background-image: url(../images/sect5.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.sect5 img{
+	width: 11vw;
+}
+.sect5 h3{
+	font-family: MuseoCyrl-700, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 2vw;
+	color: rgba(255, 255, 255, 255);
+	text-align: center;
+	margin-top:  0.5vw;
+	margin-bottom: 0.5vw;
+}
+.sect5 p{
+	font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 1vw;
+	color: rgba(255, 255, 255, 255);
+	text-align: justify;
+}
+.margforp{
+	margin-left: 20px;
+}
+.sect6 h3 {
+	font-family: MuseoCyrl-700, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 2vw;
+	color: rgba(0, 0, 56, 255);
+	text-align: center;
+	font-weight: bold;
+	margin-top: 2vw;
+}
+.sect6 h4 {
+	font-family: MuseoCyrl-700, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 1.6vw;
+	color: rgba(0, 0, 56, 255);
+	text-align: center;
+}
+.sect7{
+     background-image: url(../images/sect7.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.sect7-1{
+	background-color: rgba(255, 255, 255, 0.9);
+	padding-top: 1vw;
+
+}
+.sect7-1 h3{
+	font-family: MuseoCyrl-100, MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 1.7vw;
+	color: rgba(78, 129, 163, 255);
+	text-align: left;
+}
+.sect7-1 p{
+
+	font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 1.2vw;
+	color: rgba(78, 129, 163, 255);
+	text-align: justify;
+}
+
+.sect8 h3{
+	font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
+	font-size: 2vw;
+	color: rgba(0, 0, 56, 255);
+	text-align: center;
+	font-weight: 400;
+}
+.map{
+     background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.map h3{
+	color: rgba(255, 255, 255, 255);
+	text-align: center;
+	font-size: 2vw; 
+}
+.map p{
+	color: rgba(255, 255, 255, 255);
+	text-align: center;
+	font-size: 1.4vw; 
+}
+.map-form {
+	margin-top: 1vw;
+	background-color: rgba(0,0,56, 0.8);
+	margin-bottom: 7vw;
+	padding-bottom: 2vw;
+}
+.map-form form{
+	padding: 1vw;
+	text-align: center;
+}
+
+.footer {
+	padding-top: 1vw;
+	margin-top: 0;
+}
+
+.center {
+	text-align: center;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	color: white;
+}
