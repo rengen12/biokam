@@ -209,9 +209,6 @@ input {
     margin-left: -1vw;
     margin-bottom: 1vw; 
 }
-.slider{
-    text-align: center;
-}
 
 .cont2 h5{
 	font-family: MuseoCyrl-100, AdobeInvisFont, MyriadPro-Regular;
@@ -268,9 +265,13 @@ input {
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+.sect7 img{
+	width: 9vw;
+	padding-bottom: 1vw;
+}
 .sect7-1{
 	background-color: rgba(255, 255, 255, 0.9);
-	padding-top: 1vw;
+	padding-top: 2vw;
 
 }
 .sect7-1 h3{
@@ -278,6 +279,7 @@ input {
 	font-size: 1.7vw;
 	color: rgba(78, 129, 163, 255);
 	text-align: left;
+	margin-top: 0;
 }
 .sect7-1 p{
 
@@ -327,7 +329,55 @@ input {
 
 .center {
 	text-align: center;
+
+}
+.copy{
 	padding-top: 1vw;
 	padding-bottom: 1vw;
 	color: white;
+}
+
+#slider p{
+	color: rgba(0, 0, 56, 255);
+	text-align: center;
+	font-size: 1vw;
+	margin-top: 0.3vw;
+}
+
+.carousel-3d-container figure {
+  margin:0;
+}
+
+.carousel-3d-container figcaption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  font-size: 1vw;
+  min-width: 100%;
+  box-sizing: border-box;
+	text-align: center;
+}
+.glyphicon.glyphicon-one-fine-dot:before {
+    content: "\25cf";
+    font-size: 1.9em;
+
+}
+.glyphicon.glyphicon-one-fine-dot{
+	margin-bottom: 1vw;
+	cursor: pointer;
+	padding-left: 0.5vw;
+	color: #000035;
+}
+.glyphicon.glyphicon-one-fine-dot.active2{
+	color: #4e81af;
+}
+.sect7 .comm .row.active2{
+	display: inline-block;
+}
+.sect7 .comm .row{
+	display: none;
 }
