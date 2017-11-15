@@ -1,23 +1,21 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta ttp-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Биокамины | БК</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Биокамины" />
-<meta name="keywords" content="" />
-<meta name="author" content="rengen" />
+<meta name="description" content="Биокамины">
+<meta name="keywords" content="">
+<meta name="author" content="rengen">
 <link rel="shortcut icon" href="images/favicon/icon.png" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/animate.css">
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
-
 <script src="js/vue.js"></script>
 <script src="vue-carousel-3d/dist/vue-carousel-3d.min.js"></script>
-
 <script>
 $(document).ready(function(){
     $(".nav-tabs a").click(function(){
@@ -26,19 +24,17 @@ $(document).ready(function(){
 	$("#commbt1").click(function(){
 		$(".comm .row").slice(2,4).removeClass("active2");
 		$(".comm .row").slice(0,2).addClass("active2 animated fadeIn");
-
 		$(".commbt").toggleClass("active2");
-//		$("#commbt1").addClass("active2");
-//		$("#commbt2").removeClass("active2");
 	});
 	$("#commbt2").click(function(){
 		$(".comm .row").slice(0,2).removeClass("active2");
 		$(".comm .row").slice(2,4).addClass("active2 animated fadeIn");
-
-		
 		$(".commbt").toggleClass("active2");
-//		$("#commbt1").addClass("active2");
-//		$("#commbt2").removeClass("active2");
+	});
+	$(".pills a").click(function() {
+		$(this).toggleClass("minus");
+		var el = this.name.split('#').pop();
+		$("#"+el).toggleClass("pillactive animated fadeIn");
 	});
 });
 </script>
@@ -47,49 +43,63 @@ $(document).ready(function(){
 <body id="body">
 <div class="container-fluid" id="top">
     <div class="row header">
-       <div class="col-md-1"></div>
-       <div class="col-md-2">
+       <div class="col-md-1 col-sm-1 col-xs-1"></div>
+       <div class="col-md-2 col-sm-2 col-xs-2">
            <img src="images/favicon/logo.png" alt="logo">
        </div>
-       <div class="col-md-1"></div>
-       <div class="col-md-5">
-           <a><div>КАТАЛОГ</div></a>
-           <a><div>КЛЮЧЕВЫЕ ВЫГОДЫ</div></a>
-           <a><div>ГАЛЕРЕЯ</div></a>
-           <a><div>ОТЗЫВЫ</div></a>
+       <div class="col-md-1 col-sm-1 col-xs-1"></div>
+       <div class="col-md-5 col-sm-5 col-xs-5">
+           <a href="#catalog"><div>КАТАЛОГ</div></a>
+           <a href="#keyprof"><div>КЛЮЧЕВЫЕ ВЫГОДЫ</div></a>
+           <a href="#galary"><div>ГАЛЕРЕЯ</div></a>
+           <a href="#feedback"><div>ОТЗЫВЫ</div></a>
        </div>
-       <div class="col-md-2" id="tel">
+       <div class="col-md-2 col-sm-2 col-xs-2" id="tel">
           <a>066 326 32 32</a>
+           <button type="button" class="btn btn-warning btn-sm">Заказать звонок</button>
        </div>
    </div>
    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-          <h1>Биокамины без дыма<br /> и копоти, для квартир, офисов,<br />ресторанов и загородних домов</h1>
+        <div class="col-md-2 col-sm-2 col-xs-2"></div>
+        <div class="col-md-5 col-sm-5 col-xs-5">
+          <h1>Биокамины без дыма<br> и копоти, для квартир, офисов,<br>ресторанов и загородних домов</h1>
        </div>
-       <div class="col-md-5"></div>
+       <div class="col-md-5 col-sm-5 col-xs-5"></div>
    </div>
    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-4">
-          <p>В 6 раз дешевле<br />и на 95% безопаснее дровяного камина.<br />Установка за 30 минут без специалистов</p>
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <p>В 6 раз дешевле<br>и на 95% безопаснее дровяного камина.<br>Установка за 30 минут без специалистов</p>
        </div>
-       <div class="col-md-2"></div>
+       <div class="col-md-2 col-sm-2 col-xs-2"></div>
    </div>
     <div class="row" id="headsend">
-        <div class="col-md-3"></div>
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <p>Отправить каталог на почту:</p>
        </div>
-       <div class="col-md-2"></div>
+       <div class="col-md-2 col-sm-2 col-xs-2"></div>
    </div>
-    <div class="row headinp">
-        <div class="col-md-3"></div>
-        <div class="col-md-4">
-          <input type="email" size="40" placeholder="Введите своей email">
+   <form action="send.php">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <input type="email" size="30" placeholder="Введите своей email">
        </div>
-       <div class="col-md-2"></div>
    </div>
+   <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <input type="tel" size="30" placeholder="Введите свой телефон">
+        </div>
+   </div>
+   <div class="row headinp">
+        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <input type="submit">
+       </div>
+   </div>
+   </form>
 </div>
     
 <div class="container-fluid cont2">
@@ -97,22 +107,21 @@ $(document).ready(function(){
       <h2>Что такое БИОКАМИН?</h2>
   </div>
    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-            <iframe width="495" height="275" src="https://www.youtube.com/embed/ZWaLDgvL7PI?showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <div class="col-md-1 col-sm-1 col-xs-1"></div>
+        <div class="col-md-5 col-sm-5 col-xs-5">
+            <iframe src="https://www.youtube.com/embed/ZWaLDgvL7PI?showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="col-md-5 sect2">
+        <div class="col-md-5 col-sm-5 col-xs-5 sect2">
             <p>Биокамин – это экологически чистый камин нового поколения, отличается своей компактностью и безопасностью.</p>
             <p>Такой камин не требует использования дров, не оставляет в результате горения запах дыма гари и копоти.</p>
             <p>Установка подобных каминов не требует согласования с пожарной нспекцией</p>
             <p>Биокамин не нуждается в дымоходе, дает живое пламя и невероятно привлекателен.</p>
         </div>
-        <div class="col-md-1"></div>
     </div>
     <div class="row">
-      <hr />
+      <hr>
     </div>
-     <div class="row">
+     <div id="catalog" class="row">
       <h3>Каталог биокаминов от украинских производителей</h3>
     </div>
     <div class="row tabs">
@@ -125,7 +134,6 @@ $(document).ready(function(){
           <li><a href="#tab4">Встраиваемые очаги</a></li>
         </ul>
      </div>
-     <div class="col-md-2"></div>
     </div>
     <div class="row tabcont">
         <div class="col-md-12">
@@ -135,42 +143,47 @@ $(document).ready(function(){
                  <div class="col-md-8">
                     <div class="row">
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/1.png" alt="">
+                             <div class="im"><img src="images/tabs/1.png" alt=""></div>
                              <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Белис</p>
+                              <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/2.png" alt="">
+                             <div class="im"><img src="images/tabs/2.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Кукуджамбо</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/3.png" alt="">
+                             <div class="im"><img src="images/tabs/3.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Секретный Лосось</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                      </div>
                  </div>
-                 <div class="col-md-2"></div>
                 </div>
                 <div id="tab2" class="tab-pane fade">
                  <div class="col-md-2"></div>
                  <div class="col-md-8">
                     <div class="row">
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/3.png" alt="">
+                             <div class="im"><img src="images/tabs/3.png" alt=""></div>
                              <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Секретный Лосось</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/2.png" alt="">
+                             <div class="im"><img src="images/tabs/2.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Кукуджамбо</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/1.png" alt="">
+                             <div class="im"><img src="images/tabs/1.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Белис</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                      </div>
                  </div>
@@ -181,19 +194,22 @@ $(document).ready(function(){
                  <div class="col-md-8">
                       <div class="row">
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/2.png" alt="">
+                             <div class="im"><img src="images/tabs/2.png" alt=""></div>
                              <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Кукуджамбо</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/1.png" alt="">
+                             <div class="im"><img src="images/tabs/1.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Белис</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/3.png" alt="">
+                             <div class="im"><img src="images/tabs/3.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Секретный Лосось</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                      </div>
                  </div>
@@ -204,29 +220,31 @@ $(document).ready(function(){
                  <div class="col-md-8">
                     <div class="row">
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/3.png" alt="">
+                             <div class="im"><img src="images/tabs/3.png" alt=""></div>
                              <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Секретный</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/1.png" alt="">
+                             <div class="im"><img src="images/tabs/1.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Белис</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                          <div class="col-md-4 imgbox">
-                             <img src="images/tabs/2.png" alt="">
+                             <div class="im"><img src="images/tabs/2.png" alt=""></div>
                               <p>Цена: 4990 грн</p>
                              <p class="sm">Биокамин Кукуджамбо Лосось</p>
+                             <button type="button" class="btn btn-warning ">Заказать</button>
                          </div>
                      </div>
                  </div>
-                 
                 </div>
             </div>    
         </div>
         <div class="row">
-            <div class="col-md-5"></div>
-            <div class="col-md-2">
+            <div class="col-md-5 col-sm-5 col-xs-5"></div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
                 <button type="button" class="btn btn-warning btn-sm">Скачать полный каталожек</button>
             </div>
         </div>
@@ -236,9 +254,9 @@ $(document).ready(function(){
                 <p>Каталог в формате pdf занимает всего 13 мб, но благодаря ему Вы обязательно подберете подходящий вариант.</p>
             </div>
         </div>
-        <div class="row features">
-           <div class="col-md-1"></div>
-            <div class="col-md-5">
+        <div id="keyprof" class="row features">
+           <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-md-5 col-sm-5 col-xs-5">
                 <ol class="sect2_bl">
                     <li>95% вырабатывающего тепла остается в помещении.</li>
                     <li>В 6 раз дешевле классического камина.</li>
@@ -254,20 +272,20 @@ $(document).ready(function(){
         </div>  
     </div>
     <div class="row">
-       <div class="col-md-2"></div>
-       <div class="col-md-8">
+       <div class="col-md-2 col-sm-2 col-xs-2"></div>
+       <div class="col-md-8 col-sm-8 col-xs-8">
             <h4>Сравнение с классическими каминами:</h4>
         </div>
     </div>
      <div class="row sect3">
-       <div class="col-md-3"></div>
-       <div class="col-md-3 white">
+       <div class="col-md-3 col-sm-3 col-xs-3"></div>
+       <div class="col-md-3 col-sm-3 col-xs-3 white">
            <p>Мобильность биокамина позволяет устанавливать их в любом уголке помещения.</p>
             <p>Не требует перепланировки помещения за счет отсутствия дымохода, что делает возможным установку камина в квартирах, офисах, магазинах    	и ресторанах</p>
             <p>Разрешение от пожарной инспекции  не требуется, так как специальная конструкция не допускает перегрева и возгорания</p>
             <p>Средняя стоимость готового биокамина всего 15 000 грн.</p>
        </div>
-       <div class="col-md-3 black">
+       <div class="col-md-3 col-sm-3 col-xs-3 black">
            <p>Установка камина может быть проведена только в специально отведенном месте</p>
             <p>Затруднительно установить в квартирах, офисах, магазинах, ресторанах. Это совершенно не возможно сделать без перепланировки помещения</p>
             <p>Необходимо официальное разрешение от пожарной инспекции, которая берется не за один день</p>
@@ -275,16 +293,16 @@ $(document).ready(function(){
        </div>
     </div>
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8"><h4>Прирост популярности биокаминов в 2017 году<br />увеличился на 53%, среди разноплановых помещений</h4></div>
+        <div class="col-md-2 col-sm-2 col-xs-2"></div>
+        <div class="col-md-8 col-sm-8 col-xs-8"><h4>Прирост популярности биокаминов в 2017 году<br>увеличился на 53%, среди разноплановых помещений</h4></div>
         <div class="col-md-2"></div>
     </div>
-    <div class="row">
+    <div id="galary" class="row">
       <div id="slider">
   		<carousel-3d :controls-visible="true">
    			 <slide v-for="(slide, i) in slides" :index="0">
      			<figure>
-      				<img src="images/slider/1.png" />
+      				<img src="images/slider/1.png">
       				<figcaption>
  					Магазин “Фора” Харьков ул. Сумская 21а
 					</figcaption>
@@ -292,7 +310,7 @@ $(document).ready(function(){
     		</slide>
     		<slide v-for="(slide, i) in slides" :index="1">
      			<figure>
-      				<img src="images/slider/2.png" />
+      				<img src="images/slider/2.png">
       				<figcaption>
  					Магазин “Фора” Харьков ул. Сумская 21а
 					</figcaption>
@@ -300,7 +318,7 @@ $(document).ready(function(){
     		</slide>
      		<slide v-for="(slide, i) in slides" :index="2">	
      			<figure>
-      				<img src="images/slider/3.png" />
+      				<img src="images/slider/3.png">
       				<figcaption>
  					Магазин “Фора” Харьков ул. Сумская 21а
 					</figcaption>
@@ -308,7 +326,7 @@ $(document).ready(function(){
       		</slide>
       		<slide v-for="(slide, i) in slides" :index="3">	
      			<figure>
-      				<img src="images/slider/4.png" />
+      				<img src="images/slider/4.png">
       				<figcaption>
  					Магазин “Фора” Харьков ул. Сумская 21а
 					</figcaption>
@@ -316,7 +334,7 @@ $(document).ready(function(){
       		</slide>
       		<slide v-for="(slide, i) in slides" :index="4">	
      			<figure>
-     				<img src="images/slider/5.png" />
+     				<img src="images/slider/5.png">
       				<figcaption>
  					Магазин “Фора” Харьков ул. Сумская 21а
 					</figcaption>
@@ -324,7 +342,7 @@ $(document).ready(function(){
       		</slide>
       		<slide v-for="(slide, i) in slides" :index="5">	
      			<figure>
-     				<img src="images/slider/6.png" />
+     				<img src="images/slider/6.png">
       				<figcaption>
  					Магазин “Фора” Харьков ул. Сумская 21а
 					</figcaption>
@@ -337,23 +355,27 @@ $(document).ready(function(){
     </div>
 	<div class="sect4">
 		<div class="row tabcont">
-		   <div class="col-md-3"></div>
-		   <div class="col-md-6">
+		   <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		   <div class="col-md-6 col-sm-6 col-xs-6">
 				<h5>Оставьте заявку на скачивание расширенного каталога биокаминов от украинских производителей:</h5>
 		   </div>
 		</div>
 		<div class="row tabcont">
-		   <div class="col-md-3"></div>
-		   <div class="col-md-3">
-				<input type="email" size="40" placeholder="Введите своей email">
+	   		<form action="send.php">
+		   <div class="col-md-3 col-sm-2 col-xs-2"></div>
+		   <div class="col-md-2 col-sm-3 col-xs-3">
+		   <input type="email" size="25" placeholder="Введите Ваше имя"></div>
+		   <div class="col-md-2 col-sm-3 col-xs-3">
+				<input type="email" size="25" placeholder="Введите своей email">
 		   </div>
-		   <div class="col-md-3">
+		   <div class="col-md-3 col-sm-4 col-xs-4">
 				<button type="button" class="btn btn-warning btn-sm">Скачать каталог | PDF (13 мб)</button>
 		   </div>
+		   </form>
 		</div>
 		<div class="row tabcont">
-		   <div class="col-md-3"></div>
-		   <div class="col-md-6">
+		   <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		   <div class="col-md-6 col-sm-6 col-xs-6">
 				<p>Мы не используем почту для рассылки спама и ваши данные не будут переданы третьим лицам. Все данные являются конфиденциальными и не будут оглашаться публично.</p>
 		   </div>
 		</div>
@@ -361,48 +383,48 @@ $(document).ready(function(){
 </div>
 <div class="container-fluid sect5"> 
     <div class="row">
-    	 <div class="col-md-2"></div>
-		   <div class="col-md-8">
+    	 <div class="col-md-2 col-sm-2 col-xs-2"></div>
+		   <div class="col-md-8 col-sm-8 col-xs-8">
 				<h3>Что вы получите, покупая биокамины у нас?</h3>
 		   </div>
     </div>
     <div class="row">
-    	 <div class="col-md-3"></div>
-		   <div class="col-md-3">
+    	 <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		   <div class="col-md-3 col-sm-3 col-xs-3">
 				<img src="images/sect5_1.png" alt="">
 		   </div>
-		   <div class="col-md-1"></div>
-		   <div class="col-md-2">
+		   <div class="col-md-1 col-sm-1 col-xs-1"></div>
+		   <div class="col-md-2 col-sm-2 col-xs-2">
 				<img src="images/sect5_2.png" alt="">
 		   </div>
     </div>
     <div class="row">
-    	 <div class="col-md-3"></div>
-		   <div class="col-md-2">
+    	 <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		   <div class="col-md-2 col-sm-2 col-xs-2">
 				<p>Упаковка и страховка на сумму договора входит в стоимость биокамина</p>
 		   </div>
-		   <div class="col-md-2"></div>
-		   <div class="col-md-2">
+		   <div class="col-md-2 col-sm-2 col-xs-2"></div>
+		   <div class="col-md-2 col-sm-2 col-xs-2">
 				<p>Доставка в любой регион Украины осуществляется за счет компании.</p>
 		   </div>
     </div>
     <div class="row">
-    	 <div class="col-md-3"></div>
-		   <div class="col-md-3">
+    	 <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		   <div class="col-md-3 col-sm-3 col-xs-3">
 				<img src="images/sect5_3.png" alt="">
 		   </div>
-		   <div class="col-md-1"></div>
-		   <div class="col-md-2">
+		   <div class="col-md-1 col-sm-1 col-xs-1"></div>
+		   <div class="col-md-2 col-sm-2 col-xs-2">
 				<img src="images/sect5_4.png" alt="">
 		   </div>
     </div>
     <div class="row">
-    	 <div class="col-md-3"></div>
-		   <div class="col-md-2">
+    	 <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		   <div class="col-md-2 col-sm-2 col-xs-2">
 				<p>В комплекте с биокамином получите инструкцию, зажигалку, гарантийный талон, средство по уходу за нержавеющей сталью</p>
 		   </div>
-		   <div class="col-md-2"></div>
-		   <div class="col-md-2">
+		   <div class="col-md-2 col-sm-2 col-xs-2"></div>
+		   <div class="col-md-2 col-sm-2 col-xs-2">
 				<p>Реагируем на ваш запроc максимум за 15 минут в любой день недели 24/7.</p>
 		   </div>
     </div>
@@ -414,42 +436,42 @@ $(document).ready(function(){
 	<div class="row">
 		<h4>Узнайте, что говорят наши клиенты после покупки</h4>
 	</div>
-	<div class="row sect7">
-		<div class="col-md-5"></div>
-		<div class="col-md-6 sect7-1">
+	<div id="feedback" class="row sect7">
+		<div class="col-md-5 col-sm-5 col-xs-5"></div>
+		<div class="col-md-6 col-sm-6 col-xs-6 sect7-1">
 			<div class="comm">
 				<div class="row active2">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<img src="images/sect7_1.png" alt="">
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-9 col-sm-9 col-xs-9">
 						<h3>Светлана Арнапова (г. Кропивницкий)</h3>
 						<p>Изначально нам сказали, что биокамины не обогревают помещение и используются только для декора. На практике биокамин греет, и температура воздуха заметно повышается. Тепло начинает поступать в комнату сразу после зажигания. Отличное приобритение и спасибо за обслуживание компанию “БК”.</p>
 					</div>
 				</div>
 				<div class="row active2">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<img src="images/sect7_2.png" alt="">
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-9 col-sm-9 col-xs-9">
 						<h3>Шаповал Владислав (г. Харьков)</h3>
 						<p>Если живете в большой квартире или доме – это точно 		для Вас. Стоимость немного высокая, но… это настоящий огонь! За такое я был готов заплатить. Радует то, что эти камины сделаны в Украине, по всем вопросам можно обращаться 	к нашим производителям из “БК”. Поэтому поставил оценку положительно. </p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<img src="images/sect7_2.png" alt="">
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-9 col-sm-9 col-xs-9">
 						<h3>Шаповал Владислав (г. Харьков)</h3>
 						<p>Если живете в большой квартире или доме – это точно 		для Вас. Стоимость немного высокая, но… это настоящий огонь! За такое я был готов заплатить. Радует то, что эти камины сделаны в Украине, по всем вопросам можно обращаться 	к нашим производителям из “БК”. Поэтому поставил оценку положительно. </p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<img src="images/sect7_1.png" alt="">
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-9 col-sm-9 col-xs-9">
 						<h3>Светлана Арнапова (г. Кропивницкий)</h3>
 						<p>Изначально нам сказали, что биокамины не обогревают помещение и используются только для декора. На практике биокамин греет, и температура воздуха заметно повышается. Тепло начинает поступать в комнату сразу после зажигания. Отличное приобритение и спасибо за обслуживание компанию “БК”.</p>
 					</div>
@@ -466,43 +488,70 @@ $(document).ready(function(){
 		<h3>Часто задаваемые вопросы</h3>
 	</div>
 	<div class="row">
-		<ul class="nav nav-pills nav-stacked">
-			  <li><a data-toggle="pill" href="#pill1">Может ли такой камин обогревать помещение?</a></li>
-			  <li><a data-toggle="pill" href="#pill2">Где можно разместить биокамин?</a></li>
-			  <li><a data-toggle="pill" href="#pill3">Как разжечь камин?</a></li>
-			  <li><a data-toggle="pill" href="#pill4">Что горит в биокамине? Чем заправлять биокамин?</a></li>
-			  <li><a data-toggle="pill" href="#pill5">Биоэталон (биотопливо) опасен?</a></li>
-			  <li><a data-toggle="pill" href="#pill6">Можно ли в биокаминах регулировать интенсивность пламени?</a></li>
+		<ul class="nav nav-pills nav-stacked pills">
+		  <li><a name="#pill1" class="noLink">Может ли такой камин обогревать помещение?</a></li>
+			<li id="pill1" class="pillinf">
+				<div class="row">
+				<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>1В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
+					</div>
+				</div>
+			</li>
+		  <li><a name="#pill2" class="noLink">Где можно разместить биокамин?</a></li>
+		  <li id="pill2" class="pillinf">
+				<div class="row">
+				<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>2В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
+					</div>
+				</div>
+			</li>
+		  <li><a name="#pill3">Как разжечь камин?</a></li>
+			<li id="pill3" class="pillinf">
+				<div class="row">
+				<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>3В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
+					</div>
+				</div>
+			</li>
+		  <li><a name="#pill4">Что горит в биокамине? Чем заправлять биокамин?</a></li>
+			<li id="pill4" class="pillinf">
+				<div class="row">
+				<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>4В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
+					</div>
+				</div>
+			</li>
+		  <li><a name="#pill5">Биоэталон (биотопливо) опасен?</a></li>
+			<li id="pill5" class="pillinf">
+				<div class="row">
+				<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>5В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
+					</div>
+				</div>
+			</li>
+		  <li><a name="#pill6">Можно ли в биокаминах регулировать интенсивность пламени?</a></li>
+			<li id="pill6" class="pillinf">
+				<div class="row">
+				<div class="col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-md-10 col-sm-10 col-xs-10">
+						<p>6В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
+					</div>
+				</div>
+			</li>
 		</ul>
-	
-		<div class="tab-content">
-			<div id="pill1" class="tab-pane fade">
-				<p>1В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
-			</div>
-			<div id="pill2" class="tab-pane fade">
-				<p>2В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
-			</div>
-			<div id="pill3" class="tab-pane fade">
-				<p>3В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
-			</div>
-			<div id="pill4" class="tab-pane fade">
-				<p>4В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
-			</div>
-			<div id="pill5" class="tab-pane fade">
-				<p>5В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
-			</div>
-			<div id="pill6" class="tab-pane fade">
-				<p>6В биокамине горит Биотопливо, и заправлять биокамин можно ТОЛЬКО биотопливом. Биотопливо вы всегда сможете приобрести в нашем магазине.</p>
-			</div>
-		</div>
 	</div>
 	<div class="row map">
-		<div class="col-md-6"></div>
-		<div class="col-md-4 map-form">
+		<div class="col-md-6 col-sm-6 col-xs-6"></div>
+		<div class="col-md-4 col-sm-4 col-xs-4 map-form">
 			<h3>У вас остались вопросы?</h3>
 			<p>Оставьте заявку сейчас, и наш консультант перезвонит в течении 15 минут.</p>
-			<form action="">
-				<input type="tel" size="40" placeholder="Введите номер телефона">
+			<form action="send.php">
+				<input type="tel" size="35" placeholder="Введите номер телефона">
 				<br>
 				<button type="button" class="btn btn-warning btn-sm">Оставить заявку</button>
 			</form>
@@ -511,31 +560,31 @@ $(document).ready(function(){
 </div>
 <div class="container-fluid footer tabcont">
 	<div class="row nav">
-		<div class="col-md-2"></div>
-       <div class="col-md-2">
+		<div class="col-md-2 col-sm-2 col-xs-2"></div>
+       <div class="col-md-2 col-sm-2 col-xs-2">
            <img src="images/favicon/logo.png" alt="logo">
        </div>
-       <div class="col-md-1"></div>
-       <div class="col-md-4">
-           <a><div>КАТАЛОГ</div></a>
-           <a><div>КЛЮЧЕВЫЕ ВЫГОДЫ</div></a>
-           <a><div>ГАЛЕРЕЯ</div></a>
-           <a><div>ОТЗЫВЫ</div></a>
+       <div class="col-md-1 col-sm-1 col-xs-1"></div>
+       <div class="col-md-4 col-sm-4 col-xs-4">
+           <a href="#catalog"><div>КАТАЛОГ</div></a>
+           <a href="#keyprof"><div>КЛЮЧЕВЫЕ ВЫГОДЫ</div></a>
+           <a href="#galary"><div>ГАЛЕРЕЯ</div></a>
+           <a href="#feedback"><div>ОТЗЫВЫ</div></a>
        </div>
-       <div class="col-md-2" >
+       <div class="col-md-2 col-sm-2 col-xs-2">
           <p>+38 (066) 00-000-00</p>
           <p>+38 (066) 00-000-00</p>
        </div>
 	</div>
 	<div class="row">
-		<div class="col-md-2"></div>
-		  <div class="col-md-4">
+		<div class="col-md-2 col-sm-2 col-xs-2"></div>
+		  <div class="col-md-4 col-sm-4 col-xs-4">
 			<p>Наш офис:</p>
 			<p>г. Харьков, ст.м. Держпром, ул. Уличная 15 офис №177</p>
 		</div>
-		 <div class="col-md-3"></div>
-		  <div class="col-md-2">
-		  	<button type="button" class="btn btn-default btn-ьв">Позвонить мне</button>
+		 <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		  <div class="col-md-2 col-sm-2 col-xs-2">
+		  	<button type="button" class="btn btn-default btn-sm">Позвонить мне</button>
 		  	<p>Политика конфиденциальности</p>
 		  </div>
 	</div>
